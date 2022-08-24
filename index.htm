@@ -9,6 +9,22 @@
    <title>Labyrinth</title>
 </head>
 <body>
+   <div id="myModal" class="modal">
+      <div class="modal-content">
+         <div class="modal-header">
+            <p class="modal-header__text">Enter your name</p>
+         </div>
+         <div class="modal-body">
+            <div class="modal-field">
+               <input id="name-field" class="field" type = "text" oninput="enterName = this.value;"/>
+               <label for="name-field" class="placeholder">Your name</label>
+            </div>
+            <div class="btm-enter">
+               <p class="exit-enter">ENTER</p>
+            </div>
+         </div>
+      </div>
+   </div>
    <div class="main__container">
       <div class="description">
          <p class="description-text">
@@ -74,9 +90,9 @@
 
       <div class="leader-border">
          <div class="leader-border-text">
-            <p class="name">Name:</p>
-            <p class="score">Score:</p>
-            <p class="best">Best:</p>
+            <p>Name: <span class="name"></span></p>
+            <p>Score: <span class="score">0</span></p>
+            <p>Best: <span class="best">0</span></p>
          </div>
       </div>
    </div>
